@@ -44,8 +44,9 @@ class Home extends Component {
   }
 
   componentDidMount(){
-      const { match: { params } } = this.props;   
-      let url    = `${APIURL}opportunities/${params.opportunity_id}`;
+      //const { match: { params } } = this.props;   
+    //  let url    = `${APIURL}opportunities/${params.opportunity_id}`;
+	let url    = `${APIURL}opportunities/6125`;
       let parameter = {access_token:TOKEN}
         this.getApi(url,"GET",parameter).then(response=>{
           this.setState({opportunity:response.data},()=>{
