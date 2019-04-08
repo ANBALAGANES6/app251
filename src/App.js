@@ -9,14 +9,13 @@ class App extends Component {
 
   render(){
     return(
-      <BrowserRouter>
       
       
-        <Route path="/opportunity/:opportunity_id" exact  name="Home" component={Home} />
-        <Route path="/Edit/:edit_id" exact name="Edit" component={Edit} />
-        <Route path="/" exact  name="notfound" component={NotFounds} />
-     
-    </BrowserRouter>
+      <div>
+        <Route path="/opportunity/:opportunity_id" exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps} />}  />
+        <Route path="/Edit/:edit_id" exact name="Edit"render={ (routerProps) => < Edit routerProps={routerProps} />}  />
+        <Route path="/" exact  name="notfound" render={ (routerProps) => < NotFounds routerProps={routerProps} />}  />
+		</div>
     )
   }
 }
