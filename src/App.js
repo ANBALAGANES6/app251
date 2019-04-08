@@ -12,9 +12,9 @@ class App extends Component {
       <BrowserRouter>
       
       
-        <Route path="/opportunity/:opportunity_id"  name="Home" component={Home} />
-        <Route path="/Edit/:edit_id"  name="Edit" component={Edit} />
-        <Route path="/notfound"  name="notfound" component={NotFounds} />
+        <Route path="/opportunity/:opportunity_id" exact  name="Home" component={Home} />
+        <Route path="/Edit/:edit_id" exact name="Edit" component={Edit} />
+        <Route path="/" exact  name="notfound" component={NotFounds} />
      
     </BrowserRouter>
     )
