@@ -13,8 +13,8 @@ class App extends Component {
       
       
       <div>
-        <Route path="/opportunity/:opportunity_id" exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps} />}  />
-        <Route path="/Edit/:edit_id" exact name="Edit"render={ (routerProps) => < Edit routerProps={routerProps} />}  />
+        <Route path={`/opportunity/:opportunity_id`} exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps} />}  />
+        <Route path={`/Edit/:edit_id`} exact name="Edit"render={ (routerProps) => < Edit routerProps={routerProps} />}  />
         <Route path="/" exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps} />}  />
 		</div>
     )
