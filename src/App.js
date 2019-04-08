@@ -12,9 +12,9 @@ class App extends Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
       
       
-        <Route path="/opportunity1" exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps}/>} />
-        <Route path="/Edit/:edit_id" exact name="Edit" render={ (routerProps) => < Edit routerProps={routerProps}/>}/>
-        <Route path="/opportunity" exact  name="notfound" render={ (routerProps) => < NotFounds routerProps={routerProps}/>}  />
+        <Route path={`/opportunity1`} exact  name="Home" render={ (routerProps) => < Home routerProps={routerProps}/>} />
+  <Route path={`/Edit/:edit_id`} exact name="Edit" render={ (routerProps) => < Edit routerProps={routerProps}/>}/>
+        <Route path={`/opportunity`} exact  name="notfound" render={ (routerProps) => < NotFounds routerProps={routerProps}/>}  />
      
     </BrowserRouter>
     )
