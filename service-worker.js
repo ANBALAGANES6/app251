@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/app251/precache-manifest.8d7a86ff18eaa2ae6b113cfbc5cba59f.js"
+  "http://ANBALAGANES6.github.io/app251/precache-manifest.f48613f813945464750dbb414362e66e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/app251/index.html", {
+workbox.routing.registerNavigationRoute("http://ANBALAGANES6.github.io/app251/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
