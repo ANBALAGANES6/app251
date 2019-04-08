@@ -9,7 +9,7 @@ class App extends Component {
 
   render(){
     return(
-      <BrowserRouter >
+      <BrowserRouter>
       
       
         <Route path="/opportunity/:opportunity_id" exact  name="Home" component={Home} />
